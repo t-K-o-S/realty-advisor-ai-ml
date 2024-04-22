@@ -59,7 +59,7 @@ model.to(device)
 model.eval()
 
 # Define route to accept input data and perform inference
-@app.post("/predict/")
+@app.post("/predict_price/")
 async def predict(features: HouseFeatures):
     try:
         # Convert input data to numpy array
